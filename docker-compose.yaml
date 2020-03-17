@@ -34,7 +34,7 @@ services:
     build:
       context: .
       dockerfile: .docker/cms/Dockerfile
-    image: wordpress:5.2.2-php7.2-apache
+    image: wordpress:5.3.2-php7.2-apache
     ports:
       - '8000:80'
     restart: always
