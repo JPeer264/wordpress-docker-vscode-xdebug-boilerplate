@@ -31,10 +31,7 @@ services:
   wordpress:
     depends_on:
       - db
-    build:
-      context: .
-      dockerfile: .docker/cms/Dockerfile
-    image: wordpress:5.3.2-php7.2-apache
+    build: ./.docker/cms
     ports:
       - '8000:80'
     restart: always
